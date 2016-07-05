@@ -11,6 +11,6 @@ The algorithm is as follows:
 
 Regardless of the initial number, you will always conclude with a sequence of 4, 2, then 1.
 
-For example: When 55 is included, it requires 113 procedural repetitions in order to conclude with 1. 
+For example: When 55 is inputted, it requires 113 procedural repetitions in order to conclude with 1. 
 
 Mathematicians ponder over the explanation as to why this phenomenon occurs. 
