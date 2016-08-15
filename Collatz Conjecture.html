@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Collatz Conjecture</title>
+	</head>
+	<body>
+		<script>
+			var input = prompt('Insert any number'); // Receives a user-inputted number
+			
+			document.write("Initial Number: " , input , "<br>"); // print initial number
+			
+			var row = 1;
+				if (input.charAt(input.length-1) == 0 || input.charAt(input.length-1) == 2 || input.charAt(input.length-1) == 4 || input.charAt(input.length-1) == 6 || input.charAt(input.length-1) == 8)
+				{ // at this point, the input is considered a string
+					row++;
+					input = input/2;
+					document.write(row , ". " , input , "<br>");
+				}
+				
+				else if (input.charAt(input.length-1) == 1 || input.charAt(input.length-1) == 3 || input.charAt(input.length-1) == 5 || input.charAt(input.length-1) == 7 || input.charAt(input.length-1) == 9)
+				{
+					row++;
+					input = input*3;
+					input++;
+					document.write(row , ". " , input , "<br>");
+				}
+			
+			do { // the inputted number is now a number
+			if (input%2 == 0) // if even
+			{
+					row++;
+					input = input/2;
+					document.write(row , ". " , input , "<br>");
+			}
+			else if (input%2 == 1) // if odd
+			{
+				row++;
+					input = input*3;
+					input++;
+					document.write(row , ". " , input , "<br>");
+			}
+			}
+			while(input != 1); 
+		</script>
+	</body>
+</html>
