@@ -1,0 +1,16 @@
+body {
+    background-image: url("https://www.fg-a.com/wallpapers/white-background-geo-shapes.jpg");
+}
+input {
+	text-align: center;
+	margin: 20cm 4cm 3cm 4cm;
+	
+}
+#first_name {
+	margin: 5cm 0cm 0cm 10cm;
+}
+
+#numButton {
+	margin: 0cm 0cm 0cm 19cm;
+}
+
